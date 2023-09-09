@@ -5,7 +5,7 @@ import { FaSquareXTwitter, FaInstagram, FaReddit } from "react-icons/fa6";
 const Footer = () => {
     return (
         <footer class="footer">
-            <p>Copyright @ <span>Ibrahim Omar</span></p>
+            <p>Copyright @ <span>Filmz</span></p>
             <div class="icon">
                 <FaSquareXTwitter />
                 <FaInstagram />
