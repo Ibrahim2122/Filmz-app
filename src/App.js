@@ -1,23 +1,22 @@
-import logo from './logo.svg';
 import './App.css';
+import React from 'react';
+import Header from './Components/Header';
+import Hero from './Components/Hero';
+import MovieList from './Components/MovieList';
+import Footer from './Components/Footer';
 
 function App() {
+  const topMoviesURL = 'https://api.themoviedb.org/3/movie/top_rated?language=en-US&page=1';
+  const popularMoviesURL = 'https://api.themoviedb.org/3/movie/popular?language=en-US&page=1';
+
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Header />
+      <Hero />
+      <MovieList title="Top Rated Movies" url={topMoviesURL} />
+      <MovieList title="Popular Movies" url={popularMoviesURL} />
+      <Footer />
     </div>
   );
 }

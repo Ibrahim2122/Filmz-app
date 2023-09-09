@@ -1,0 +1,58 @@
+.hero {
+    width: 100%;
+    min-height: 100vh;
+    background-color: var(--color-black);
+    display: flex;
+    align-items: center;
+    color: var(--color-white);
+    text-align: start;
+}
+
+.hero h1 {
+    font-size: 4rem;
+    font-weight: 500;
+    letter-spacing: 1px;
+    text-shadow: 0 0 1px black;
+    margin-bottom: 20px;
+}
+
+ .hero span {
+    font-family: 'Dancing Script', cursive;
+    margin-left: 5px;
+    font-style: italic;
+    color: var(--color-red);
+    text-shadow: 0 0 1px black;
+}
+
+.hero a {
+    background-color: var(--color-red);
+    color: var(--color-white);
+    font-size: 0.9em;
+    font-weight: 500;
+    text-shadow: 0 0 1px black;
+    padding: 0.9375em 2.1875em;
+    border-radius: 15px;
+    letter-spacing: 1px;
+    transition: transform 0.7s ease;
+    border: none;
+    text-decoration: none;
+}
+
+.hero a:hover {
+    background-color: var(--color-darkRed);
+    transform: scale(1.1);
+}
+
+@media (max-width: 1023px) {
+    .hero h1 {
+        font-size: 1.3em;
+    }
+
+    .hero span {
+        font-size: 1em;
+    }
+
+    .hero a {
+        font-size: 0.7em;
+    }
+}
